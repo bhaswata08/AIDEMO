@@ -54,8 +54,9 @@ pip install -r requirements.lock
 ## Running the Project
 Open and run the Jupyter notebook:
 ```bash
-jupyter notebook demo.ipynb
+jupyter notebook src/aidemo/demo.ipynb
 ```
+or open in vscode and run
 
 ## Troubleshooting
 - Ensure all API keys are correctly copied
