@@ -1,0 +1,29 @@
+[project]
+name = "aidemo"
+version = "0.1.0"
+description = "Add your description here"
+dependencies = [
+    "notebook>=7.3.3",
+    "langchain>=0.3.21",
+    "langgraph>=0.3.19",
+    "langchain-groq>=0.3.1",
+    "python-dotenv>=1.0.1",
+    "langchain-community>=0.3.20",
+    "langchain-tavily>=0.1.5",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aidemo"]
